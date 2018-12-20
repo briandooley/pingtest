@@ -8,6 +8,8 @@ var app = express();
 
 var ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
+app.use(express.static('public'));
+
 // app is running!
 console.log('running at ' + new Date());
 app.get('/', function(req, res) {
