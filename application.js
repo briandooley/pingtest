@@ -11,7 +11,7 @@ var ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 // app is running!
 console.log('running at ' + new Date());
 app.get('/', function(req, res) {
-    res.send('Hello from NodeJS  at '+ new Date());
+    res.send('mailforce pinged  at ' + new Date());
     console.log('Pinged at ' + new Date());
 });
 
